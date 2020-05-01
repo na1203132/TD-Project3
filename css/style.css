@@ -1,0 +1,344 @@
+*{
+    box-sizing: border-box;
+    outline:0;
+}
+/*****************************************************/
+/***** flex containers *****/
+body,
+header,
+.tag,
+form{
+    display: flex;
+}
+
+body,
+.tag,
+form,
+header{
+    flex-direction: column;
+
+}
+
+
+main{
+    padding: 0 10px;
+}
+
+
+/*****************************************************/
+/***** Header Styling *****/
+
+header{
+    width:100%;
+    background: rgb(45, 57, 69);
+    justify-content: center;
+    box-shadow: inset 0 3px 20px black;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+h1{
+    align-self: center;
+    color: white;
+    font-weight: bold;
+    font-size: 28px;
+}
+
+.tag{
+    justify-items: center;
+    align-items: center;
+    border-bottom: 4px solid black;
+}
+
+h2{
+  text-shadow:  0 1px 20px black;
+}
+
+.title{
+    font-size: 23px;
+    font-weight: bold;
+    color: rgb(45, 57, 69);
+    padding-top: 20px;
+    margin:2px 0 18px 0;
+    border-top:2px solid black
+    
+}
+
+.tag p{
+    text-align: center;
+    color: rgb(181, 185, 189);
+    width:80%;
+    margin-top:1px;
+}
+
+
+/*****************************************************/
+/***** ####Form Styling#### *****/
+form{
+    margin-left:0;
+    font-family: 'Scope One';
+}
+
+.contact input:focus, selecT:focus, #other:focus{
+ border: 3px solid #557594;
+ transition: all  0.4s;
+
+}
+
+
+
+/*****************************************************/
+/***** Contact Information section styling *****/
+
+main{
+  background-color: white;
+  box-shadow: inset 0 3px 10px black;
+}
+body{
+  background: rgb(88, 88, 88);
+}
+
+.contact input, select{
+    background: rgb(241, 241, 239);
+    width: 100%;
+    min-height: 3.5em;
+    border-radius: 5px;
+    border: none;
+    margin: 1em 0;
+}
+
+::placeholder{
+   text-align: left;
+    padding-left: 20px;
+    color:rgb(195, 199, 202);
+}
+
+#name::placeholder, #email::placeholder
+{
+    text-align: right;
+    padding-right: 20px;
+    color:rgb(195, 199, 202);
+   
+}
+
+
+
+#zip{
+    width:28%;
+}
+
+
+select{
+    color: rgb(181, 185, 189);
+}
+  
+/*****************************************************/
+/***** Newsletter section styling *****/
+
+.news-wrapper p{
+    margin-bottom: 3px;
+}
+.news-wrapper{
+ padding-left: 5px;
+}
+
+.newsletter{
+   
+    color: rgb(45, 57, 69);
+    padding-top: 20px;
+    margin:2px 0 18px 0;
+    border-top:2px solid black;
+}
+
+.title-news{
+    font-size: 23px;
+    font-weight: bold;
+}
+
+
+
+/*****************************************************/
+/***** Creating Customized Checkboxes and Radiobuttons *****/
+/***** The idea is brought from this website: https://www.w3schools.com/howto/howto_css_custom_checkbox.asp *****/
+
+
+/* Customize the label (the container) */
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 13px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-size: 1em;
+  }
+  
+  /* Hide the browser's default checkbox */
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: 2px;
+    left: 0;
+    height: 15px;
+    width: 15px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05);
+    background-color: #eee;
+    border-radius:3px;
+  }
+
+
+
+  
+  /* On mouse-over, add a grey background color */
+  .container:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .container input:checked ~ .checkmark {
+    background-color: #2196F3;
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  .circle{
+    border-radius: 50%;
+}
+
+  /* Show the checkmark when checked */
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .container .check:after {
+    left: 4px;
+    top: 1px;
+    width: 4px;
+    height: 7px;
+    border: solid white;
+    border-width: 0 2.5px 2.5px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+ /* Style the radiobutton/indicator */
+  .container .circle:after {
+    left: 5px;
+    top: 5px;
+    width: 0;
+    height: 0;
+    border: solid white;
+    border-radius:50%;
+    border-width:2.7px;
+  
+  }
+
+/*****************************************************/
+/***** Styling text area *****/
+
+  #other{
+      width:100%;
+      height: 100px;
+      background: rgb(239, 240, 241);
+      border: white;
+      margin-top: 15px;
+      margin-bottom: 15px;
+      border-radius: 5px;
+  }
+ 
+/*****************************************************/
+/***** Styling Sign Up*****/
+  button{
+      background: #4ebbb5;
+      height: 70px;
+      color:white;
+      font-weight: bold;
+      font-size: 30px;
+      box-shadow: none;
+      border: none;
+      border-radius: 5px;
+      font-family: 'Times New Roman', Times, serif;
+      cursor: pointer;
+      box-shadow: inset 0 3px 20px rgb(4, 105, 136);
+  }
+
+  button:hover{
+    color: rgb(4, 105, 136);
+    transition: all 0.2s;
+  }
+
+  button:active{
+    background: rgb(17, 240, 9);
+  }
+
+
+/*****************************************************/
+/***** Styling Footer*****/
+
+footer{
+    text-align: center;
+    margin-top: 2.8rem;
+    margin-bottom: 10rem;
+    color: rgb(181, 185, 189);
+}
+
+
+
+
+
+
+@media(min-width: 768px){
+
+    main{
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    .col{
+        display: flex;
+        flex-direction: row;
+        
+        
+    }
+
+    
+
+    .col label{
+        align-self: center;
+        flex-grow: 4;
+        max-width:40%;
+    }
+
+    .col input, .col select {
+      align-self: center;
+      width:60%;
+  }
+    
+  
+    .col label[for="zip"]{
+      
+    }
+
+   
+   
+    
+   
+    
+}

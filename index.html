@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Scope+One&display=swap" rel="stylesheet">
+        <title>The code review</title>
+    </head>
+    
+    
+  
+    <body>
+        <header>
+            <h1>THE CODE REVIEW</h1>
+        </header>
+        <main>
+
+        <div class="tag">
+            <h2>Signup for our newsletter</h2>
+            <p>Get the latest news on how your code is doing right in your inbox.</p>
+        </div>
+
+        <form action="index.html" method="post">
+
+
+            <label class="title">Contact Information</label>
+            <div class="contact">
+            <div class="col">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="user_name" placeholder="Required" required>
+            </div>
+
+            <div class="col">
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="user_email" placeholder="Required" required>
+            </div>
+
+            <div class="col">
+            <label for="number">Phone Number:</label>
+            <input type="tel" id="number" name="user_number" placeholder="e.g. 127-8474-293">
+            </div>
+            <div class="col"> 
+            <label for="address">Street Address:</label>
+            <input type="text" id="address" name="user_address" placeholder="e.g. 23, John Wilson St">
+            </div>
+
+            <div class="col"> 
+            <label for="city">City:</label>
+            <input type="text" id="city" name="user_city" placeholder="e.g. New York">
+            </div>
+
+            <div class="col"> 
+            <label for="state">State:</label>
+            <select id="state" name="user_state">
+                <option value="" selected disabled >Choose State</option>
+                <optgroup label="Europe">
+                    <option value="belgium">Belgium</option>
+                    <option value="denmark">Denmark</option>
+                    <option value="finland">Finland</option>
+                    <option value="georgia">Georgia</option>
+                    <option value="hungary">Hungary</option>
+                    <option value="norway">Norway</option>
+                    <option value="sweden">Sweden</option>
+                </optgroup>
+
+                <optgroup label="Africa">
+                    <option value="egypt">Egypt</option>
+                    <option value="morocco">Morocco</option>
+                    <option value="algeria">Algeria</option>
+                    <option value="tunisia">Tunisia</option>
+                </optgroup>
+
+                <optgroup label="North America">
+                    <option value="usa">USA</option>
+                    <option value="canada">Canada</option>
+                    <option value="mexico">Mexico</option>
+                </optgroup>
+            </select>
+            </div>
+
+            <div class="col">
+            <label for="zip">Zip Code:</label><br>
+            <input type="text" id="zip" name="user_zip" placeholder="e.g. 0000">
+            </div>
+        </div>
+
+        <div class="newsletter">
+            <label class="title-news">Newsletter</label>
+            <div class="news-wrapper">
+            <p><label class="news-label">Select the newsletter you would like to recieve</label></p><br>
+
+            <label class="container" for="html_news">HTML News
+            <input type="checkbox"  id="html_news"         value="html_news" name="user_newsletter">
+            <span class="checkmark check"></span>
+            </label><br>
+
+            <label class="container" for="css_news">CSS News
+            <input type="checkbox"  id="css_news"         value="css_news" name="user_newsletter">
+            <span class="checkmark check"></span>
+            </label><br>
+
+            <label class="container" for="javascript_news">Javascript News
+            <input type="checkbox"  id="javascript_news"  value="javascript_news" name="user_newsletter">
+            <span class="checkmark check    "></span>
+            </label><br>
+            
+            
+            <p><label>Newsletter Format</label></p><br>
+            <label class="container" for="html">HTML
+                <input type="radio"  id="html"    value="html" name="user_newsletter_format">
+                <span class="checkmark circle"></span>
+            </label><br>
+
+            <label class="container " for="plain">Plain text
+                <input type="radio"  id="plain"    value="plain" name="user_newsletter_format">
+                <span class="checkmark circle"></span>
+            </label><br>
+            
+            <label for="other">Other topics you would like to talk about</label><br>
+            <textarea id="other" name="user_other"></textarea>
+            </div>
+        </div>
+
+        <button type="submit">Sign Up</button>
+        </form>
+    
+        <footer>
+            <p>Copyright &copy; The Code Review</p>
+         </footer>
+    </main>
+        
+    </body>
+
+    
+
+</html>
